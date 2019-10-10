@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int grafico(char *d){
+  int i, j, ç;
+  int tamanho = strlen(d)-1;  
+  for(i=0; i<=tamanho; i++){
+  if(d[i]>=48 && d[i]<=57){
+  ç = d[i] - 48;
+  for(j=0; j<ç; j++){
+  printf("*");
+  }
+  printf("\n");
+  }
+  }
+  return 0;
+}
+int main(){
+  char d[40];
+  printf("Digite os dadoss:");
+ fgets(d, 40, stdin);
+ grafico(d);        
+}

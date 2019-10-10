@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void) {
+int num=0, i, media;
+for(i=14;i<73;i++){
+  if(i%2==0){
+    num=num+i;
+  }
+}
+media = num/30;
+printf("%d\n", media);
+}

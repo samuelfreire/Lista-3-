@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <string.h>
+
+int imprimv(int el[], int total)
+{
+int i;
+int max = el[0];
+for (i = 1; i < total; ++i)
+{
+if (el[i] > max) max = el[i];
+}   
+for (int y = max; y >= 1; --y)
+{   
+for (int x = 0; x < total; ++x)
+{
+if (el[x] >= y)
+printf("*");
+else 
+printf(" ");
+} 
+printf("\n"); 
+}   
+return 0;}   
+int main(){
+int i, j=0; 
+char digi[100];
+int copo[100];
+for(i=0; i<100; i++){
+copo[i] = 0;
+digi[i] = 0;
+}printf("Coloque os número minino:");
+fgets(digi, 40, stdin);
+int tem = strlen(digi);
+for(i=0; i<tem; i++){
+	if(digi[i]>=48&&digi[i]<=57){
+	copo[j] = digi[i]-48;
+	j++;
+	}
+	}	
+  tem = strlen(digi);
+  imprimv(copo, tem);
+  return 0;
+}

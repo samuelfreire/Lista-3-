@@ -1,0 +1,14 @@
+#include <stdio.h>
+float celforfaren(float c){
+  float f;
+  f = (c*9/5)+32;
+  return f;
+}
+int main(void) {
+  float c, f;
+  printf("Digite a temperatura em celcius que vc quer converter para farenheint:"); scanf("%f",&c);
+  f = celforfaren(c);
+  printf("%6.3f celcius = %6.3f farenheint",c, f);
+  
+  return 0;
+}

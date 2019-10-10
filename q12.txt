@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(void) {
+int x;
+x = 37 - 13;
+printf("O módulo da diferença entre o 6º e o 12º número primo é: %d", x);
+return 0;
+}

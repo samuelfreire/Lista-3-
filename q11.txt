@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, i, primo,par;
+  printf("Digite o número:");
+  scanf("%d", &a);
+  for(i=2;i<a/2;i++){
+    if(a%i==0){
+    par++;
+    break;
+    }
+  }
+  if(a==3){ 
+    printf("é primo ");
+    return 0;
+  }
+  if(a==2||a==4){
+    printf("Não é primo");
+    return 0;
+  }
+    if(par==0){
+      printf("É primo ");
+      return 0;
+    }
+    else{
+      printf("Não é primo");
+      return 0;
+          }
+
+
+  return 0;
+}

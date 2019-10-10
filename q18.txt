@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+float celfaren(float f){
+  float c;
+  c=(f-32)*5/9;
+  return c;
+}
+int main(){
+  float f, c;
+  scanf("%f", &f);
+  c = celfaren(f);
+  printf("%f", c);
+  return 0;
+}

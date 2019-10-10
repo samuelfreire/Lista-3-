@@ -1,0 +1,15 @@
+# include  <stdio.h>
+# include  <string.h>
+int  main () {
+int i,j,tamanh,quanto=0;
+char nome [ 100 ], c='a';
+printf ("Digite o texto:");
+fgets (nome, 100 , stdin);
+tamanh=strlen(nome)-1;
+for (i = 0 ; i <= tamanh; i ++) {
+if (nome [i] == c) {
+quanto ++;
+} 
+}
+printf ( "você digitou a letra %c %d vezes.\n",c,quanto);
+} 

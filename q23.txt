@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+int main(void) {
+char textin[200]; int p=0, l=0, b=0, i;
+printf("Digite o textin minino:");
+fgets(textin, 200, stdin);
+for(i=0;textin[i]!='\0';i++){
+if(textin[i]!=0&&textin[i]!=' '){
+l++;}
+else{p++;}
+}
+printf("%d palavras digitadas, %d caracteres(obs:sem contar os espaços do texto)", p+1, l-1);
+
+
+
+  return 0;
+}

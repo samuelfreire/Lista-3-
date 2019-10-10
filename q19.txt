@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int intervalo(int c, int b){
+  srand(time(0));
+  if(c>b){
+  int d = c; c = b; b = d;
+  }
+  int fim = c+1+(rand()%(b-c));
+  return fim;}
+int main(){
+  int c, b, g;
+  printf("Qual o intervalo meu bom?\n");
+  printf("a:");
+  scanf("%d", &c);
+  printf("b:");
+  scanf("%d", &b);
+
+  g = intervalo(c, b);
+    printf("%d\n", g);
+}

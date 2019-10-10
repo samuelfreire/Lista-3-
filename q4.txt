@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void) {
+  int i;
+  int n, div;
+  printf("Digite o número desejado:");
+  scanf("%d", &n);
+  //lembrando que eu estava errando o código pq esqueci que não pode dividir números por 0, logo i deve ser maior que 0 no começo do for :((((( #SamukaBoladãoExplica
+  for(i=1;i<=n;i++){
+    if(n%i==0){
+      printf("%d é divisivel por %d\n", n, i);
+    }
+
+  }
+  return 0;
+}

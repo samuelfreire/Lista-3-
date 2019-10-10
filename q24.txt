@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+int contrariu(char *f){
+int i;
+char cop[40];
+int t = strlen(f)-1;
+int j = t - 1;
+for(i=0; i<=t; i++){
+cop[i]=f[j];
+j--;}
+for(i=0; i<=t; i++){
+f[i]=cop[i];}
+return 0;}
+int main(){
+char f[40];
+printf("Digite o texto minino:");
+fgets(f, 40, stdin);
+contrariu(f);
+puts(f);
+}

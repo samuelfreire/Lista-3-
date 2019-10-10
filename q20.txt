@@ -1,0 +1,24 @@
+#include <stdio.h>
+int primo(int s){
+  int fat=2;
+  printf("%d =", s);
+  while(s > 1){
+  while(s % fat == 0){
+  printf(" %d", fat);
+  s = s/fat; 
+  if(s > 1){
+  printf(" x");
+  }
+  }
+  fat++;   
+  }
+  return 0;
+}
+  int main(){
+  int n, fator=2;
+  printf("Digite o número:");
+  scanf("%d", &n);
+  printf("Decompondo %d em fatores primos temos:\n", n);  
+  int p = primo(n);
+  printf("\n");
+}

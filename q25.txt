@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <string.h>
+  int main() {
+  char t[100];
+  int j,k,ca=0,cb=0,cc=0,cd=0,ce=0,cf=0,cg=0,ch=0,ci=0,cj=0,ck=0,cl=0,cm=0,cn=0,co=0,cp=0,cq=0,cr=0,cs=0,ct=0,cu=0,cv=0,cw=0,cx=0,cy=0,cz=0;
+  printf("Digite o texto");
+  fgets(t, 100, stdin);
+  for(j = 0; j < strlen(t)+1; j++){
+  k = t[j];
+  if(k == 65 || k == 97){
+  ca++;
+  }
+  if(k == 66 || k == 98){
+  cb++;
+  }
+  if(k == 67 || k == 99){
+  cc++;
+  }
+  if(k == 68 || k == 100){
+  cd++;
+  }
+  if(k == 69 || k == 101){
+  ce++;
+  }
+  if(k == 70 || k == 102){
+  cf++;
+  }
+  if(k == 71 || k == 103){
+  cg++;
+  }
+  if(k == 72 || k == 104){
+  ch++;
+  }
+  if(k == 73 || k == 105){
+  ci++;
+  }
+  if(k == 74 || k == 106){
+  cj++;
+  }
+  if(k == 75 || k == 107){
+  ck++;
+  }
+  if(k == 76 || k == 108){
+  cl++;
+  }
+  if(k == 77 || k == 109){
+  cm++;
+  }
+  if(k == 78 || k == 110){
+  cn++;
+  }
+  if(k == 79 || k == 111){
+  co++;
+  }
+  if(k == 80 || k == 112){
+  cp++;
+  }
+  if(k == 81 || k == 113){
+  cq++;
+  }
+  if(k == 82 || k == 114){
+  cr++;
+  }
+  if(k == 83 || k == 115){
+  cs++;
+  }
+  if(k == 84 || k == 116){
+  ct++;
+  }
+  if(k == 85 || k == 117){
+  cu++;
+  }
+  if(k == 86 || k == 118){
+  cv++;
+  }
+  if(k == 87 || k == 119){
+  cw++;
+  }
+  if(k == 88 || k == 120){
+  cx++;
+  }
+  if(k == 89 || k == 121){
+  cy++;
+  }
+  if(k == 90 || k == 122){
+  cz++;
+  }
+  }
+  printf("Seu texto tem: \na: %d \nb: %d \nc: %d \nd: %d \ne: %d \nf: %d \ng: %d \nh: %d \ni: %d \nj: %d \nk: %d \nl: %d \nm: %d \nn: %d \no: %d \np: %d \nq: %d \nr: %d \ns: %d \nt: %d \nu: %d \nv: %d \nw: %d \nx: %d \ny: %d \nz: %d", ca, cb, cc, cd, ce, cf, cg, ch, ci, cj, ck, cl, cm, cn, co, cp, cq, cr, cs, ct, cu, cv, cw, cx, cy, cz);
+  return 0;
+}

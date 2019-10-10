@@ -1,0 +1,48 @@
+#include <stdio.h>
+int main(){
+  int dentro,d1, d2,d3,d4,d5,d6,d7,d8,d9,d0,n1,n2,n3,n4,n5,n6,n7,n8,n9,n0,fora;
+  printf("digite o 1º valor:");scanf("%d",&n1);
+  printf("digite o 2º valor:");scanf("%d",&n2);
+  printf("digite o 3º valor:");scanf("%d",&n3);
+  printf("digite o 4º valor:");scanf("%d",&n4);
+  printf("digite o 5º valor:");scanf("%d",&n5);
+  printf("digite o 6º valor:");scanf("%d",&n6);
+  printf("digite o 7º valor:");scanf("%d",&n7);
+  printf("digite o 8º valor:");scanf("%d",&n8);
+  printf("digite o 9º valor:");scanf("%d",&n9);
+  printf("digite o 10º valor:");scanf("%d",&n0);
+  if(n1>=10&&n1<=50){d1=1;}
+  else{d1=0;};
+  if(n2>=10&&n2<=50){d2=1;}
+  else{d2=0;};
+  if(n3>=10&&n3<=50){d3=1;}
+  else{d3=0;};
+  if(n4>=10&&n4<=50){d4=1;}
+  else{d4=0;};
+  if(n5>=10&&n5<=50){d5=1;}
+  else{d5=0;};
+  if(n6>=10&&n6<=50){d6=1;}
+  else{d6=0;};
+  if(n7>=10&&n7<=50){d7=1;}
+  else{d7=0;};
+  if(n8>=10&&n8<=50){d8=1;}
+  else{d8=0;};
+  if(n9>=10&&n9<=50){d9=1;}
+  else{d9=0;};
+  if(n0>=10&&n0<=50){d0=1;}
+  else{d0=0;};
+  dentro=d1+d2+d3+d4+d5+d6+d7+d8+d9+d0;
+  fora=10-dentro;
+  if(dentro==1){
+     printf("Tem %d valor dentro do intervalo e %d valores fora do intervalo.", dentro, fora);
+     return 0;
+}
+if(fora==1){
+   printf("Tem %d valores dentro do intervalo e %d valor fora do intervalo.", dentro, fora);
+   return 0;
+}
+else{
+  printf("Tem %d valores dentro do intervalo e %d valores fora do intervalo.", dentro, fora);
+}
+return 0;
+}

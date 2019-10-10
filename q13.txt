@@ -1,0 +1,17 @@
+# include  <stdio.h>
+
+int main(){
+    int n1=0 , n2 = 1 , n3 = 1 , cont = 0 , d;
+    printf ("Digite a quantidade de soma fib:");
+   scanf ("%d",&d);
+    printf ( "%d ",n1);
+
+    while (cont <d- 1 ) {
+    n1 = n2;
+    n2 = n3;
+    n3 = n1 + n2;
+    cont ++;
+    printf ("%d ",n1);
+    }
+    printf ( "\n");
+}

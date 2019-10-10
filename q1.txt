@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(void) {
+int soma=0, i;
+for(i=0;i<=100;i++){
+  soma = soma + i;
+}
+  printf("%d", soma);
+  return 0;
+}
